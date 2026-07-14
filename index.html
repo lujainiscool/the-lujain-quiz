@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>how well do you know me?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="brandmark"><span></span>THE QUIZ</div>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">☀</button>
+<div class="score-badge" id="scoreBadge">SCORE <b id="scoreBadgeNum">0</b>/19</div>
+<div id="rail"></div>
+
+<main id="main">
+
+  <section id="hero">
+    <div class="eyebrow">WELCOME IM GLAD UR HERE</div>
+    <h1 class="hero-title">how well do you<br>know <em>me</em>?</h1>
+    <p class="hero-sub"> a mini game to test my frnds</p>
+    <div class="name-form">
+      <input type="text" id="playerName" placeholder="type your name" maxlength="24" autocomplete="off">
+      <button class="btn" id="startBtn" disabled>Start</button>
+    </div>
+    <div class="scroll-hint" id="scrollHint"><div class="stem"></div>scroll</div>
+  </section>
+
+  <!-- quiz sections injected here by JS -->
+  <div id="quizMount"></div>
+
+  <section id="results">
+    <div class="eyebrow">final score</div>
+    <div class="result-score"><span id="finalScore">0</span><span style="color:var(--fg-dim);font-size:.35em;">/19</span></div>
+    <div class="result-label" id="resultTier">&nbsp;</div>
+    <p class="result-msg" id="resultMsg">&nbsp;</p>
+    <div class="result-actions">
+      <button class="btn" id="toLeaderboard">See the leaderboard</button>
+      <button class="btn ghost" id="retryBtn">Try again</button>
+    </div>
+  </section>
+
+  <section id="leaderboard">
+    <div class="lb-wrap">
+      <div class="lb-title">leaderboard</div>
+      <div class="lb-sub">everyone who's taken this quiz on this device</div>
+      <ul class="lb-list" id="lbList"></ul>
+      <div class="lb-note">saved locally in this browser &mdash; if you host this site somewhere, everyone testing on the <i>same device</i> will show up here together.</div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
