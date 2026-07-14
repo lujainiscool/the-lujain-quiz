@@ -240,9 +240,8 @@
   // ==========================================
   
   // PASTE YOUR KEYS FROM SUPABASE INSIDE THE SINGLE QUOTES BELOW:
-  const SUPABASE_URL = 'sb_publishable_90GcHyudLqEV8mnjE0hWdw_JEUYdwOC';
-  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlnbnhyeWtybHRreHB0a2dhdHFsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQwNDMzMjEsImV4cCI6MjA5OTYxOTMyMX0.AcMKvA9OyduKZRXGr_t2U-WwQjFpXMYAlqOZ00TK9xE';
-  
+ const SUPABASE_URL = 'https://ygnxrykrltkxptkgatql.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_90GcHyudLqEV8mnjE0hWdw_JEUYdwOC';
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   let lbRecorded = false;
 
